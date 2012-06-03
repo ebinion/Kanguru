@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-
+<!-- KANGURU MOBILE SITE -->
 <html lang="en">
 	<head>
 		<meta title="Kanguru" author="vgdub" content="text/html" charset="utf-8">
+		<link rel="stylesheet" href="styles/reset.css">
 		<link rel="stylesheet" href="styles/style.css">
 	</head>
 
+
+	<div class="wrapper">
+	<!-- HEADER/NAV BAR -->
 	<header>
 		<nav>
 			<ol>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">AM</a></li>
-				<li><a href="#">NOON</a></li>
-				<li><a href="#">PM</a></li>
+				<li class="home"><a href="#">Home</a></li>
+				<li class="time"><a href="#">AM</a></li>
+				<li class="time"><a href="#">NOON</a></li>
+				<li class="time"><a href="#">PM</a></li>
 			</ol>
 		</nav>
 	</header>
+	<!-- HEADER/NAV END -->
 
+	<!-- DISPLAY AREA AREA -->
 	<body>
-		<div class="wrapper">
+		<!-- BACKGROUND WRAPPER -->
+		<div class="background"> 
+			<!-- WEATHER INFO -->
 			<aside>
 				<div class="temperature">76</div>
 				<div class="percipitation">30%</div>
 				<div class="wind">10mph</div>
 			</aside>
+			<!-- WEATHER INFO END -->
+
+			<!-- DAY DESCRIPTION -->
+			<div class="day_desc">it's sunny all day!</div>
+			<!-- DAY DESCRIPTION END -->
+
+			<!-- TRANSPORT -->
+			<img src="img/bike.png" alt="Get off your lazy ass and bike" class="transport bike">
+			<!-- TRANSPORT END -->
+
+			<!-- CHANGE TRANS BUTTONS -->
+			<div class="othertrans">
+				<button class="btn-left">Left</button>
+				<button class="btn-right">Right</button>
+			</div>
+			<!-- CHANGE TRANS BUTTONS END -->
 			
+			<!-- ITEMS -->
+			<Footer>
+				<p>ITEMS</p>
+				<img src="img/stungunitem.jpg" alt="Taser" class="item">
+				<img src="img/stungunitem.jpg" alt="Umbrella" class="item">
+				<img src="img/stungunitem.jpg" alt="Sunglasses" class="item">
+			</Footer>
 
 		</div>
+		<!-- BACKGROUND WRAPPER END -->
 	</body>
+	</div>
 
 </html>
+<!-- KANGURU MOBILE SITE END -->
