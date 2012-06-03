@@ -1,0 +1,126 @@
+.wrapper {
+	width: 320px;
+	height: 358px;
+	position: relative;
+}
+
+div.background {
+	height: 314px;
+	background: url(../img/sunnyday.jpg) 0 0 no-repeat;
+}
+
+header {
+	overflow: hidden;
+}
+
+/* NAV BAR */
+
+nav {
+	text-align: center;
+	background-color: #F1FDFF;
+	background-image: linear-gradient(top, #333, #222);
+	background: repeat-x;
+	overflow: hidden;
+}
+
+nav li {
+	list-style: none;
+	display: inline-block;
+	float: left;
+}
+
+nav li a {
+	background: #0095FF;
+	background: linear-gradient(#1054DB, #0095FF);
+	border-left: 1px solid rgba(0,0,0,0.2);
+	border-right: 1px solid rgba(255,255,0.1);
+	color: #fff;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0 20px;
+	line-height: 38px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
+	text-transform: uppercase;
+}
+
+nav li a:hover {
+	background: #5D84CC;
+	box-shadow: inset 0 2px 5px rgba(0,0,0,0.4);
+	border-right: 1px solid rgba(0,0,0,0.2);
+	color: #d0d2d5;
+}
+
+nav ol li {
+	display: inline-block;
+	float: left;
+
+}
+
+nav ol li.home {
+	width: 44px;
+	height: 44px;
+	text-indent: -9999px;
+}
+
+nav ol li.time {
+	width: 92px;
+	height: 44px;
+}
+
+/* END NAV BAR*/
+
+/* ASIDE */
+
+aside {
+	width: 44px;
+	height: 104px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	float: left;
+}
+
+/* END ASIDE*/
+
+/* DAY DESCRIPTION */
+
+div.day_desc {
+	height: 26px;
+	float: left;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+/* END DAY DESCRIPTION*/
+
+/* FOOTER */
+
+footer {
+	height: 70px;
+	width: 320px;
+	position: absolute;
+	bottom: 0px;
+}
+	footer p {
+		width: 320px;
+		line-height: 10px;
+		text-align: center;
+		border-top: 1px dotted red;
+		border-bottom: 1px dotted red
+	}
+
+	footer img {
+		display: inline-block;
+		height: 57px;
+		width: 57px;
+		margin: 0 auto;
+		padding: 1px;
+		float: left;
+	}
+
+/* END FOOTER */
+
+.background {
+	height:314;
+	width: 320;
+}
