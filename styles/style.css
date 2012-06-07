@@ -1,26 +1,128 @@
+/* HOME PAGE 
+========================================================= */
+
 .wrapper {
 	width: 320px;
-	height: 358px;
+	height: 428px;
 	position: relative;
-}
-
-div.background {
-	height: 314px;
-	background: url(../img/sunnyday.jpg) 0 0 no-repeat;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
 header {
+	width: 320px;
+	margin: 0 auto;
+	top: 0px;
+	height: 44px;
+}
+
+div.logo {
 	overflow: hidden;
+	width: 280px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+form {
+	overflow: hidden;
+	background: -webkit-linear-gradient(top, #fff, #f8f8f8);
+  	border: 1px solid #d0d2d5;
+  	border-bottom: 1px solid #bebfc2;
+  	border-radius: 4px;
+  	padding: 10px;
+  	width: 260px;
+  	margin: 0 auto;
+}
+
+form ul {
+	height: 100px;
+}
+
+form li {
+	overflow: hidden;
+}
+
+form label {
+	width: 100px;
+	float: left;
+	padding: 1px;
+	margin: 2px 0;
+}
+
+form input {
+	width: 248px;
+	float: left;
+}
+
+form fieldset {
+	width: 280px;
+	margin: 0px 0 -10px -10px;
+	padding: 10px 0;
+	background: -webkit-linear-gradient(top, #ebeced, #dedfe0);
+  	border: none;
+  	border-top: 1px solid #d0d2d5;
+  	border-radius: 0 0 4px 4px;
+  	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+form button {
+	height: 50px;
+	width: 100px;
+	display: inline-block;
+	padding: 20px;
+	margin: 0 90px;
+	background: -webkit-linear-gradient(top, #f29120, #f36b22);
+  	border: none;
+  	border-radius: 4px;
+ 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.75);
+  	color: #fff;
+  	font-weight: bold;
+  	float: left;
+ 	padding: 5px 10px;
+  	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+}
+
+form button:hover {
+	background: -webkit-linear-gradient(top, #C0551B, #B24F19);
+}
+
+form button:active {
+	background: #B24F19;
+  	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.75), 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+/* END HOME PAGE
+========================================================= */
+
+
+/* RESULTS PAGE 
+========================================================= */
+
+div.background {
+	height: 314px;
+	background: #047f8c;
+}
+
+header {
+
 }
 
 /* NAV BAR */
 
 nav {
+	position: fixed;
 	text-align: center;
-	background-color: #F1FDFF;
-	background-image: linear-gradient(top, #333, #222);
+	background-color: #fffdf9;
+	background-image: linear-gradient(top, #b3aba1, #767676);
 	background: repeat-x;
 	overflow: hidden;
+}
+
+nav ul li {
+	height: 44px;
 }
 
 nav li {
@@ -30,10 +132,10 @@ nav li {
 }
 
 nav li a {
-	background: #0095FF;
-	background: linear-gradient(#1054DB, #0095FF);
-	border-left: 1px solid rgba(0,0,0,0.2);
-	border-right: 1px solid rgba(255,255,0.1);
+	background: #767676;
+	background: linear-gradient(#b3aba1, #767676);
+	border-left: 1px solid rgba(255,253,249,1);
+	border-right: 1px solid rgba(255,253,249,1);
 	color: #fff;
 	display: block;
 	font-size: 11px;
@@ -42,6 +144,15 @@ nav li a {
 	line-height: 38px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
 	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav li a:first-child {
+	border-left: none;
+}
+
+nav li a:last-child {
+	border-left: none;
 }
 
 nav li a:hover {
@@ -49,6 +160,10 @@ nav li a:hover {
 	box-shadow: inset 0 2px 5px rgba(0,0,0,0.4);
 	border-right: 1px solid rgba(0,0,0,0.2);
 	color: #d0d2d5;
+}
+
+nav li a.am {
+
 }
 
 nav ol li {
@@ -70,32 +185,53 @@ nav ol li.time {
 
 /* END NAV BAR*/
 
+/* DAY DESCRIPTION */
+
+div.day_desc {
+	height: 22px;
+	width: 280px;
+	margin: 0 auto;
+	background: rgba(160,210,241,0.6);
+	color: #fffdf9;
+	line-height: 16px;
+	text-align: center;
+	font-size: 16px;
+	padding: 4px 0 0 0;
+}
+
+/* END DAY DESCRIPTION */
+
 /* ASIDE */
 
 aside {
+	color: #fffdf9;
 	width: 44px;
-	height: 104px;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	height: 80px;
+	margin: 10px 0 0 10px;
 	float: left;
 }
 
 /* END ASIDE*/
 
-/* DAY DESCRIPTION */
+/* FORM OF TRANS */
 
-div.day_desc {
-	height: 26px;
-	float: left;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+.transport {
+	padding-top: 100px;
 }
 
-/* END DAY DESCRIPTION*/
+.btn-left {
+	float: left;
+}
+
+.btn-right {
+	float: right;
+}
+/* END FORM OF TRANS */
 
 /* FOOTER */
 
 footer {
+	clear: both;
 	height: 70px;
 	width: 320px;
 	position: absolute;
@@ -105,15 +241,14 @@ footer {
 		width: 320px;
 		line-height: 10px;
 		text-align: center;
-		border-top: 1px dotted red;
-		border-bottom: 1px dotted red
+		padding: 1px 0;
 	}
 
 	footer img {
 		display: inline-block;
 		height: 57px;
 		width: 57px;
-		margin: 0 auto;
+		margin: 0 23px;
 		padding: 1px;
 		float: left;
 	}
@@ -123,4 +258,8 @@ footer {
 .background {
 	height:314;
 	width: 320;
+}
+
+.clear {
+	clear: both;
 }

@@ -9,56 +9,43 @@
 
 
 	<div class="wrapper">
-	<!-- HEADER/NAV BAR -->
-	<header>
-		<nav>
-			<ol>
-				<li class="home"><a href="#">Home</a></li>
-				<li class="time"><a href="#">AM</a></li>
-				<li class="time"><a href="#">NOON</a></li>
-				<li class="time"><a href="#">PM</a></li>
-			</ol>
-		</nav>
-	</header>
-	<!-- HEADER/NAV END -->
-
-	<!-- DISPLAY AREA AREA -->
 	<body>
-		<!-- BACKGROUND WRAPPER -->
-		<div class="background"> 
-			<!-- WEATHER INFO -->
-			<aside>
-				<div class="temperature">76</div>
-				<div class="percipitation">30%</div>
-				<div class="wind">10mph</div>
-			</aside>
-			<!-- WEATHER INFO END -->
 
-			<!-- DAY DESCRIPTION -->
-			<div class="day_desc">it's sunny all day!</div>
-			<!-- DAY DESCRIPTION END -->
+		<header>
+		<!-- LOGO -->
+		<div class="logo">
+		<h1>Kanguru (LOGO)</h1>
+		<p>Don't think, just go! (TAGLINE)</p>
+		<div>
+		<!-- END LOGO -->
+		</header>
 
-			<!-- TRANSPORT -->
-			<img src="img/bike.png" alt="Get off your lazy ass and bike" class="transport bike">
-			<!-- TRANSPORT END -->
+		<!-- FORM BEGIN -->
+		<form action="">
+			<ul>
+				<!-- LOCATION -->
+				<li>
+					<label for="location">Location:</label>
+					<input type="text" name="location" id="location" placeholder="Chicago, IL, 60657"required>
+				</li>
+				<!-- LOCATION END -->
 
-			<!-- CHANGE TRANS BUTTONS -->
-			<div class="othertrans">
-				<button class="btn-left">Left</button>
-				<button class="btn-right">Right</button>
-			</div>
-			<!-- CHANGE TRANS BUTTONS END -->
-			
-			<!-- ITEMS -->
-			<Footer>
-				<p>ITEMS</p>
-				<img src="img/stungunitem.jpg" alt="Taser" class="item">
-				<img src="img/stungunitem.jpg" alt="Umbrella" class="item">
-				<img src="img/stungunitem.jpg" alt="Sunglasses" class="item">
-			</Footer>
+				<!-- DESTINATION -->
+				<li>
+					<label for="destination">Destination:</label>
+					<input type="text" name="location" id="location" placeholder="Merchandise Mart, Chicago, IL" required>
+				</li>
+				<!-- DESTINATION END -->
+			</ul>
 
-		</div>
-		<!-- BACKGROUND WRAPPER END -->
+			<fieldset>
+				<!-- GO BUTTON -->
+				<button type="button" name="go-btn" onclick="window.location.href='file://localhost/Users/student/Desktop/Kanguru/results.html'" class="btn-go">Go!</button>
+				<!-- END GO BUTTON -->
+			</fieldset>
+		</form>
+		<!-- FORM END -->
+
 	</body>
 	</div>
 
