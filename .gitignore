@@ -1,4 +1,4 @@
 .DS_Store
 KanguruApp/db/*.sqlite3
-KanguruApp/log
-Kanguru/tmp
+KanguruApp/log/*
+Kanguru/tmp/*
