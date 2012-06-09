@@ -1,6 +1,6 @@
-<h1><%= @weather.current_temp %>&deg;</h1>
-<h2><%= @weather.current_conditions %></h2>
+<h1><%= @weather.temperature %>&deg;</h1>
+<h2><%= @weather.condition %></h2>
 <ul>
-	<li>Wind Speed: <%= @weather.current_wind %>mph</li>
-	<li>Humidity: <%= @weather.current_humidity %></li>
+	<li>Wind: <%= @weather.wind_direction %> <%= @weather.wind_speed %>mph</li>
+	<li>Humidity: <%= @weather.humidity %></li>
 </ul>
