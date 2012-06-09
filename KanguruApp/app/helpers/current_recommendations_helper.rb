@@ -1,0 +1,2 @@
+module CurrentRecommendationsHelper
+end
