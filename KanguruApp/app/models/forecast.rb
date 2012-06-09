@@ -7,7 +7,7 @@ class Forecast
   attr_accessor :forecast_json
   
   def initialize(city = "Chicago", state = "IL")
-    @forecast_json = JSON.parse(open("http://api.wunderground.com/api/010d8d7c9ed487d9/geolookup/hourly/conditions/forecast/q/#{{state}}/#{{city}}.json").read)
+    @forecast_json = JSON.parse(open("http://api.wunderground.com/api/010d8d7c9ed487d9/geolookup/hourly/conditions/forecast/q/#{state}/#{city}.json").read)
   end
   
   def current_temp
