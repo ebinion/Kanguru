@@ -3,7 +3,7 @@
 
 .wrapper {
 	width: 320px;
-	height: 428px;
+	height: 528px;
 	position: relative;
 	margin: 0 auto;
 	overflow: hidden;
@@ -13,7 +13,6 @@ header {
 	width: 320px;
 	margin: 0 auto;
 	top: 0px;
-	height: 44px;
 }
 
 div.logo {
@@ -69,7 +68,6 @@ form button {
 	height: 50px;
 	width: 100px;
 	display: inline-block;
-	padding: 20px;
 	margin: 0 90px;
 	background: -webkit-linear-gradient(top, #f29120, #f36b22);
   	border: none;
@@ -102,7 +100,6 @@ form button:active {
 ========================================================= */
 
 div.background {
-	height: 314px;
 	background: #047f8c;
 }
 
@@ -113,7 +110,7 @@ header {
 /* NAV BAR */
 
 nav {
-	position: fixed;
+/*	position: fixed;*/
 	text-align: center;
 	background-color: #fffdf9;
 	background-image: linear-gradient(top, #b3aba1, #767676);
@@ -141,25 +138,25 @@ nav li a {
 	font-size: 11px;
 	font-weight: bold;
 	padding: 0 20px;
-	line-height: 38px;
+	line-height: 44px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
 	text-transform: uppercase;
 	text-decoration: none;
 }
 
-nav li a:first-child {
+nav li:first-child a {
 	border-left: none;
 }
 
-nav li a:last-child {
-	border-left: none;
+nav li:last-child a {
+	border-right: none;
 }
 
-nav li a:hover {
-	background: #5D84CC;
+nav li.active a {
+	background: -webkit-linear-gradient(top, #f29120, #f36b22);
 	box-shadow: inset 0 2px 5px rgba(0,0,0,0.4);
 	border-right: 1px solid rgba(0,0,0,0.2);
-	color: #d0d2d5;
+	color: #fff;
 }
 
 nav li a.am {
@@ -179,7 +176,7 @@ nav ol li.home {
 }
 
 nav ol li.time {
-	width: 92px;
+	width: 276px;
 	height: 44px;
 }
 
@@ -188,9 +185,13 @@ nav ol li.time {
 /* DAY DESCRIPTION */
 
 div.day_desc {
+	padding-top: 5px;
+}
+
+p.desc_info {
 	height: 22px;
 	width: 280px;
-	margin: 0 auto;
+	margin: 0px auto;
 	background: rgba(160,210,241,0.6);
 	color: #fffdf9;
 	line-height: 16px;
@@ -201,22 +202,44 @@ div.day_desc {
 
 /* END DAY DESCRIPTION */
 
-/* ASIDE */
+/* WEATHER INFO */
 
-aside {
+.weather-container {
 	color: #fffdf9;
-	width: 44px;
-	height: 80px;
-	margin: 10px 0 0 10px;
+	width: 280px;
+	height: 20px;
+	padding: 10px 20px;
 	float: left;
 }
 
-/* END ASIDE*/
+div.weather {
+	width: 140px;
+	float: left;
+	text-align: center;
+}
+
+	div.weather p {
+		line-height: 15px;
+		background-color: black;
+		border-radius: 6px;
+	}
+
+	div.weather p.temperature {
+		line-height: 30px;
+	}
+
+/* END WEATHER INFO */
 
 /* FORM OF TRANS */
 
+.transport-container {
+	clear: both;
+	text-align: center;
+}
+
 .transport {
-	padding-top: 100px;
+	padding-top: 120px;
+	width: 100px;
 }
 
 .btn-left {
@@ -231,11 +254,13 @@ aside {
 /* FOOTER */
 
 footer {
+	background: rgba(225,225,225,.9);
 	clear: both;
-	height: 70px;
+	height: 130px;
 	width: 320px;
-	position: absolute;
-	bottom: 0px;
+/*	position: absolute;
+	bottom: 0px;*/
+	overflow: visible;
 }
 	footer p {
 		width: 320px;
@@ -246,9 +271,9 @@ footer {
 
 	footer img {
 		display: inline-block;
-		height: 57px;
-		width: 57px;
-		margin: 0 23px;
+		height: 50px;
+		width: 50px;
+		margin: 0 27px;
 		padding: 1px;
 		float: left;
 	}
