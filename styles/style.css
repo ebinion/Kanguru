@@ -3,7 +3,7 @@
 
 .wrapper {
 	width: 320px;
-	height: 428px;
+	height: 528px;
 	position: relative;
 	margin: 0 auto;
 	overflow: hidden;
@@ -13,7 +13,6 @@ header {
 	width: 320px;
 	margin: 0 auto;
 	top: 0px;
-	height: 44px;
 }
 
 div.logo {
@@ -69,7 +68,6 @@ form button {
 	height: 50px;
 	width: 100px;
 	display: inline-block;
-	padding: 20px;
 	margin: 0 90px;
 	background: -webkit-linear-gradient(top, #f29120, #f36b22);
   	border: none;
@@ -113,7 +111,7 @@ header {
 /* NAV BAR */
 
 nav {
-	position: fixed;
+/*	position: fixed;*/
 	text-align: center;
 	background-color: #fffdf9;
 	background-image: linear-gradient(top, #b3aba1, #767676);
@@ -141,25 +139,25 @@ nav li a {
 	font-size: 11px;
 	font-weight: bold;
 	padding: 0 20px;
-	line-height: 38px;
+	line-height: 44px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
 	text-transform: uppercase;
 	text-decoration: none;
 }
 
-nav li a:first-child {
+nav li:first-child a {
 	border-left: none;
 }
 
-nav li a:last-child {
-	border-left: none;
+nav li:last-child a {
+	border-right: none;
 }
 
-nav li a:hover {
-	background: #5D84CC;
+nav li.active a {
+	background: -webkit-linear-gradient(top, #f29120, #f36b22);
 	box-shadow: inset 0 2px 5px rgba(0,0,0,0.4);
 	border-right: 1px solid rgba(0,0,0,0.2);
-	color: #d0d2d5;
+	color: #fff;
 }
 
 nav li a.am {
@@ -179,7 +177,7 @@ nav ol li.home {
 }
 
 nav ol li.time {
-	width: 92px;
+	width: 276px;
 	height: 44px;
 }
 
@@ -188,9 +186,13 @@ nav ol li.time {
 /* DAY DESCRIPTION */
 
 div.day_desc {
+	padding-top: 5px;
+}
+
+p.desc_info {
 	height: 22px;
 	width: 280px;
-	margin: 0 auto;
+	margin: 0px auto;
 	background: rgba(160,210,241,0.6);
 	color: #fffdf9;
 	line-height: 16px;
@@ -216,6 +218,7 @@ aside {
 /* FORM OF TRANS */
 
 .transport {
+	margin-left: -10px;
 	padding-top: 100px;
 }
 
@@ -232,10 +235,12 @@ aside {
 
 footer {
 	clear: both;
-	height: 70px;
+	height: 130px;
 	width: 320px;
-	position: absolute;
-	bottom: 0px;
+/*	position: absolute;
+	bottom: 0px;*/
+	overflow: visible;
+	margin-top: 52px;
 }
 	footer p {
 		width: 320px;
