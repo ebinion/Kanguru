@@ -1,13 +1,18 @@
 /* HOME PAGE 
 ========================================================= */
 
+body {
+	font-family: 'BreeSerif Regular', Arial, Helvetica, sans-serif;
+}
+
 .wrapper {
 	width: 320px;
-	height: 528px;
+	height: 445px;
 	position: relative;
 	margin: 0 auto;
 	overflow: hidden;
 }
+
 
 header {
 	width: 320px;
@@ -100,7 +105,7 @@ form button:active {
 ========================================================= */
 
 div.background {
-	background: #047f8c;
+/*	background: #047f8c;*/
 }
 
 header {
@@ -125,6 +130,21 @@ nav ul li {
 nav li {
 	list-style: none;
 	display: inline-block;
+	float: left;
+}
+
+nav ol li.home {
+	width: 44px;
+	height: 44px;
+	text-indent: -9999px;
+	float: left;
+}
+
+nav ol li.home a {
+	background: url(../img/homebtn_03.png) -5px 0 no-repeat;
+	width: 44px;
+	height: 44px;
+	text-indent: -9999px;
 	float: left;
 }
 
@@ -167,12 +187,6 @@ nav ol li {
 	display: inline-block;
 	float: left;
 
-}
-
-nav ol li.home {
-	width: 44px;
-	height: 44px;
-	text-indent: -9999px;
 }
 
 nav ol li.time {
@@ -238,23 +252,39 @@ div.weather {
 }
 
 .transport {
+	background: url(../img/frame.png) -110px 100px no-repeat;
 	padding-top: 120px;
 	width: 100px;
+	overflow: visible;
 }
 
 .btn-left {
+	background: url(../img/chevron_left.png) 0 0 no-repeat;
 	float: left;
+	height: 21px;
+	width: 16px;
+	margin-top: 150px;
+	margin-left: 50px;
+	border: none;
+	text-indent: -9999px;
 }
 
 .btn-right {
+	background: url(../img/chevron_right.png) 0 0 no-repeat;
 	float: right;
+	height: 21px;
+	width: 16px;
+	margin-top: 150px;
+	margin-right:50px;
+	border: none;
+	text-indent: -9999px;
 }
 /* END FORM OF TRANS */
 
 /* FOOTER */
 
 footer {
-	background: rgba(225,225,225,.9);
+	
 	clear: both;
 	height: 130px;
 	width: 320px;
@@ -281,8 +311,15 @@ footer {
 /* END FOOTER */
 
 .background {
+	background: url(../img/raincar_bkg.png);
 	height:314;
 	width: 320;
+}
+
+@font-face {
+  font-family: 'BreeSerif Regular';
+  src: url('../BreeSerif-Regular.otf');
+  
 }
 
 .clear {
