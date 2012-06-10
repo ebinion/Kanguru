@@ -190,7 +190,7 @@ nav ol li {
 }
 
 nav ol li.time {
-	width: 276px;
+	width: 138px;
 	height: 44px;
 }
 
@@ -252,7 +252,6 @@ div.weather {
 }
 
 .transport {
-	background: url(/assets/frame.png) -110px 100px no-repeat;
 	padding-top: 120px;
 	width: 100px;
 	overflow: visible;
@@ -286,7 +285,7 @@ div.weather {
 /* FOOTER */
 
 footer {
-	
+	background: url(/assets/frame.png) 0px -100px repeat;
 	clear: both;
 	height: 130px;
 	width: 320px;
@@ -312,8 +311,20 @@ footer {
 
 /* END FOOTER */
 
-.background {
+.background.rain {
 	background: url(/assets/rainy.png);
+	height:314;
+	width: 320;
+}
+
+.background.sunny {
+	background: url(/assets/clearskies.jpg);
+	height:314;
+	width: 320;
+}
+
+.background.snow {
+	background: url(/assets/snow.jpg);
 	height:314;
 	width: 320;
 }
