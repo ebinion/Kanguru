@@ -1,5 +1,5 @@
 .DS_Store
-KanguruApp/db/*.sqlite3
-KanguruApp/log/*
-Kanguru/tmp/*
+*.sqlite3
+KanguruApp/log/
+Kanguru/tmp/
 

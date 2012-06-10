@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  image_location: MyString
+  name: MyString
+  condition: MyString
+
+two:
+  image_location: MyString
+  name: MyString
+  condition: MyString

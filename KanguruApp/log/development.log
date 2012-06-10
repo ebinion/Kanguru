@@ -444,3 +444,22 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-09 18:38:33 -0500
 Served asset /jquery.js - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCurrentWeather (20120609215557)
+Migrating to AddCityAndStateToCurrentWeather (20120609221121)
+Migrating to CreateTransportations (20120610045627)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "transportations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image" varchar(255), "name" varchar(255), "condition" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120610045627')[0m
+  [1m[35m (2.4ms)[0m  commit transaction
+Migrating to CreateConditionalItems (20120610050012)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "conditional_items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "condition" varchar(255), "image" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120610050012')[0m
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("conditional_items")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("current_weathers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("transportations")[0m
