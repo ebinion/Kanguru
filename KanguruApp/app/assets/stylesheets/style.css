@@ -267,6 +267,7 @@ div.weather {
 	margin-left: 50px;
 	border: none;
 	text-indent: -9999px;
+	cursor: pointer;
 }
 
 .btn-right {
@@ -278,6 +279,7 @@ div.weather {
 	margin-right:50px;
 	border: none;
 	text-indent: -9999px;
+	cursor: pointer;
 }
 /* END FORM OF TRANS */
 
