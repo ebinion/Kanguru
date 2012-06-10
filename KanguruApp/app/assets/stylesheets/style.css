@@ -190,7 +190,7 @@ nav ol li {
 }
 
 nav ol li.time {
-	width: 138px;
+	width: 276px;
 	height: 44px;
 }
 
@@ -206,7 +206,8 @@ p.desc_info {
 	height: 22px;
 	width: 280px;
 	margin: 0px auto;
-	background: rgba(160,210,241,0.6);
+	background: rgba(54,137,158,0.8);
+	border-radius:12px;
 	color: #fffdf9;
 	line-height: 16px;
 	text-align: center;
@@ -233,13 +234,27 @@ div.weather {
 }
 
 	div.weather p {
-		line-height: 15px;
-		background-color: black;
-		border-radius: 6px;
+		line-height: 28px;
+		border-radius: 12px;
 	}
 
 	div.weather p.temperature {
-		line-height: 30px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight:bold;
+		line-height: 61px;
+		font-size: 75px;
+		text-shadow:1px 1px 1px rgba(0,0,0,.4)
+	}
+
+	div.weather p.percipitation {
+		color: rgb(44,138,161);
+		background: rgba(255,255,255,0.8);
+	}
+
+	div.weather p.wind {
+		margin-top: 5px;
+		color: rgb(44,138,161);
+		background: rgba(255,255,255,0.8);
 	}
 
 /* END WEATHER INFO */
@@ -258,24 +273,24 @@ div.weather {
 }
 
 .btn-left {
-	background: url(/assets/chevron_left.png) 0 0 no-repeat;
+	background: url(/assets/chevron_left.png) 10px 15px no-repeat;
 	float: left;
-	height: 21px;
-	width: 16px;
+	height: 44px;
+	width: 44px;
 	margin-top: 150px;
-	margin-left: 50px;
+	margin-left: 65px;
 	border: none;
 	text-indent: -9999px;
 	cursor: pointer;
 }
 
 .btn-right {
-	background: url(/assets/chevron_right.png) 0 0 no-repeat;
+	background: url(/assets/chevron_right.png) 15px 15px no-repeat;
 	float: right;
-	height: 21px;
-	width: 16px;
+	height: 44px;
+	width: 44px;
 	margin-top: 150px;
-	margin-right:50px;
+	margin-right:65px;
 	border: none;
 	text-indent: -9999px;
 	cursor: pointer;
@@ -285,7 +300,6 @@ div.weather {
 /* FOOTER */
 
 footer {
-	background: url(/assets/frame.png) 0px -100px repeat;
 	clear: both;
 	height: 130px;
 	width: 320px;
@@ -308,6 +322,10 @@ footer {
 		padding: 1px;
 		float: left;
 	}
+
+.variables {
+	background: url(/assets/frame.png) 0px 129px repeat-x;
+}
 
 /* END FOOTER */
 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- KANGURU MOBILE SITE -->
+<html lang="en">
+	<head>
+		<meta author="vgdub" content="text/html" charset="utf-8">
+		<title>Kanguru</title>
+		<link rel="stylesheet" href="styles/reset.css">
+		<link rel="stylesheet" href="styles/style.css">
+	</head>
+
+
+
+
+	<!-- DISPLAY AREA AREA -->
+	<body>
+		<div class="wrapper">
+
+			<!-- HEADER/NAV BAR -->
+			<header>
+				<nav>
+					<ol>
+						<li class="home"><a href="file://localhost/Users/student/Desktop/Kanguru/home.html" selected>Home</a></li>
+						<li class="time active"><a href="#" class="am">AM</a></li>
+						<li class="time"><a href="#" class="forecast">3-Day</a></li>
+					</ol>
+				</nav>
+			</header>
+			<!-- HEADER/NAV END -->
+			<div class="clear"></div>
+			<!-- BACKGROUND WRAPPER -->
+			<div class="background"> 
+
+				<!-- DAY DESCRIPTION -->
+				<div class="day_desc">
+					<p class="desc_info">it's sunny all day!</p>
+				</div>
+				<!-- DAY DESCRIPTION END -->
+
+				<!-- WEATHER INFO -->
+				<article class="weather-container">
+					<div class="weather">
+						<p class="temperature">
+							62
+						</p>
+					</div>
+					<div class="weather">
+						<p class="percipitation">
+							30%
+						</p>
+						<p class="wind">
+							10mph
+						</p>
+					</div>
+				</article>
+				<!-- WEATHER INFO END -->
+
+				<!-- TRANSPORT -->
+				<article class="transport-container">
+					
+					<!-- CHANGE TRANS BUTTONS -->
+					<div class="othertrans">
+						<button class="btn-left">Left</button>
+						<button class="btn-right">Right</button>
+					</div>
+					<!-- CHANGE TRANS BUTTONS END -->
+
+					<img src="img/car/mode_car.png" alt="Get off your lazy ass and bike" class="transport car">
+				</article>
+				<!-- TRANSPORT END -->
+
+		
+				<!-- ITEMS -->
+				<Footer>
+					<p>ITEMS</p>
+					<img src="img/car/car_icons_boot.png" alt="Boot" class="item">
+					<img src="img/car/car_icons_coffee.png" alt="Coffee" class="item">
+					<img src="img/car/car_icons_donut.png" alt="Donut" class="item">
+
+					<br class="clear">
+					
+					<img src="img/car/car_icons_jacket.png" alt="jacket" class="item">
+					<img src="img/car/car_icons_podcast.png" alt="podcast" class="item">
+					<img src="img/car/car_icons_umbrella.png" alt="umbrella" class="item">
+				</Footer>
+			</div>
+			<!-- BACKGROUND WRAPPER END -->
+		</div>
+	</body>
+</html>
+<!-- KANGURU MOBILE SITE END -->
