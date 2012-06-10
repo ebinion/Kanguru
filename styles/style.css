@@ -141,7 +141,7 @@ nav ol li.home {
 }
 
 nav ol li.home a {
-	background: url(../img/homebtn_03.png) -5px 0 no-repeat;
+	background: url(/assets/homebtn_03.png) -5px 0 no-repeat;
 	width: 44px;
 	height: 44px;
 	text-indent: -9999px;
@@ -252,14 +252,14 @@ div.weather {
 }
 
 .transport {
-	background: url(../img/frame.png) -110px 100px no-repeat;
+	background: url(/assets/frame.png) -110px 100px no-repeat;
 	padding-top: 120px;
 	width: 100px;
 	overflow: visible;
 }
 
 .btn-left {
-	background: url(../img/chevron_left.png) 0 0 no-repeat;
+	background: url(/assets/chevron_left.png) 0 0 no-repeat;
 	float: left;
 	height: 21px;
 	width: 16px;
@@ -270,7 +270,7 @@ div.weather {
 }
 
 .btn-right {
-	background: url(../img/chevron_right.png) 0 0 no-repeat;
+	background: url(/assets/chevron_right.png) 0 0 no-repeat;
 	float: right;
 	height: 21px;
 	width: 16px;
@@ -311,7 +311,7 @@ footer {
 /* END FOOTER */
 
 .background {
-	background: url(../img/rainy.png);
+	background: url(/assets/rainy.png);
 	height:314;
 	width: 320;
 }
