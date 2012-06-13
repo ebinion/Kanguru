@@ -11,14 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120610050012) do
+ActiveRecord::Schema.define(:version => 20120611072102) do
 
   create_table "conditional_items", :force => true do |t|
     t.string   "name"
-    t.string   "condition"
     t.string   "image"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.integer  "transportation_id"
   end
 
   create_table "current_weathers", :force => true do |t|
